@@ -51,7 +51,16 @@ export const tr = {
     socialTitle: "Sosyal",
     rights: "Bahtiyar Tuna Mimarlık & Mobilya. Tüm Hakları Saklıdır.",
     privacy: "Gizlilik Politikası",
-    terms: "Kullanım Şartları"
+    terms: "Kullanım Şartları",
+    hoursTitle: "ÇALIŞMA SAATLERİ",
+    mon: "Pazartesi",
+    tue: "Salı",
+    wed: "Çarşamba",
+    thu: "Perşembe",
+    fri: "Cuma",
+    sat: "Cumartesi",
+    sun: "Pazar",
+    closed: "Kapalı"
   },
   projectDetail: {
     notFound: "Proje bulunamadı.",

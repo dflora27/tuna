@@ -45,15 +45,15 @@ const Footer = () => {
 
 
             <div className="footer-col">
-              <h4 className="footer-col-label">ÇALIŞMA SAATLERİ</h4>
+              <h4 className="footer-col-label">{t('footer.hoursTitle')}</h4>
               <ul className="footer-hours">
-                <li>Pazartesi: 08:00 - 18:30</li>
-                <li>Salı: 08:00 - 18:30</li>
-                <li>Çarşamba: 08:00 - 18:30</li>
-                <li>Perşembe: 08:00 - 18:30</li>
-                <li>Cuma: 08:00 - 18:30</li>
-                <li>Cumartesi: 08:00 - 13:00</li>
-                <li className="off-day">Pazar: Kapalı</li>
+                <li>{t('footer.mon')}: 08:00 - 18:30</li>
+                <li>{t('footer.tue')}: 08:00 - 18:30</li>
+                <li>{t('footer.wed')}: 08:00 - 18:30</li>
+                <li>{t('footer.thu')}: 08:00 - 18:30</li>
+                <li>{t('footer.fri')}: 08:00 - 18:30</li>
+                <li>{t('footer.sat')}: 08:00 - 13:00</li>
+                <li className="off-day">{t('footer.sun')}: {t('footer.closed')}</li>
               </ul>
             </div>
           </div>

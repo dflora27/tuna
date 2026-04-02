@@ -6,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 import './ProjectDetail.css';
 
 const ProjectDetail = () => {
-  const { t } = useLanguage();
+const { t, lang } = useLanguage();
   const { id } = useParams();
   const navigate = useNavigate();
   const currentIndex = projectsData.findIndex(p => p.id === id);
@@ -83,9 +83,9 @@ const ProjectDetail = () => {
         >
           <h1 className="pd-hero-title">{project.title.toUpperCase()}</h1>
           <div className="pd-hero-meta">
-            <span>{t('projectDetail.location')}: {project.location}</span>
+            <span>{t('projectDetail.location')}: {lang === 'en' ? project.location_en : project.location}</span>
             <span>{t('projectDetail.year')}: {project.year}</span>
-            <span>{t('projectDetail.type')}: {project.type}</span>
+            <span>{t('projectDetail.type')}: {lang === 'en' ? project.type_en : project.type}</span>
           </div>
         </motion.div>
 

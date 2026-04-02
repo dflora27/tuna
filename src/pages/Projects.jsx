@@ -6,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { projectsData } from '../data/projectsData';
 import './Projects.css';
 
-const ProjectItem = ({ project, index, t }) => {
+const ProjectItem = ({ project, index, t, lang }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -31,9 +31,9 @@ const ProjectItem = ({ project, index, t }) => {
           />
           <div className="project-overlay">
             <div className="project-info">
-              <span className="project-category">{project.category}</span>
+              <span className="project-category">{lang === 'en' ? project.category_en : project.category}</span>
               <h3 className="project-title">{project.title}</h3>
-              <p className="project-description">{project.description}</p>
+              <p className="project-description">{lang === 'en' ? project.description_en : project.description}</p>
               <span className="project-cta">→ {t('projects.viewProject')}</span>
             </div>
           </div>
@@ -44,7 +44,7 @@ const ProjectItem = ({ project, index, t }) => {
 };
 
 const Projects = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   useEffect(() => {
     document.body.classList.remove('theme-light');
@@ -59,7 +59,7 @@ const Projects = () => {
       <div className="projects-grid-wrapper">
         <div className="projects-grid">
           {projectsData.map((project, index) => (
-            <ProjectItem key={project.id} project={project} index={index} t={t} />
+            <ProjectItem key={project.id} project={project} index={index} t={t} lang={lang} />
           ))}
         </div>
       </div>

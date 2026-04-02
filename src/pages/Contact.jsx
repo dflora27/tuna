@@ -23,33 +23,37 @@ const Contact = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="contact-eyebrow">İLETİŞİM</span>
+            <span className="contact-eyebrow">{lang === 'tr' ? 'İLETİŞİM' : 'CONTACT'}</span>
             <h1 className="contact-heading">
-              Birlikte<br />Harika Şeyler<br />Yaratalım.
+              {lang === 'tr' ? (
+                <>Birlikte<br />Harika Şeyler<br />Yaratalım.</>
+              ) : (
+                <>Let's<br />Create<br />Great Things.</>
+              )}
             </h1>
 
             <div className="contact-info-list">
               <div className="contact-info-item">
-                <span className="contact-info-label">E-Posta</span>
+                <span className="contact-info-label">{lang === 'tr' ? 'E-Posta' : 'Email'}</span>
                 <a href="mailto:info@bahtiyartuna.com" className="contact-info-value">
                   info@bahtiyartuna.com
                 </a>
               </div>
               <div className="contact-info-item">
-                <span className="contact-info-label">Telefon</span>
+                <span className="contact-info-label">{lang === 'tr' ? 'Telefon' : 'Phone'}</span>
                 <a href="tel:+905543806327" className="contact-info-value">
                   +90 554 380 63 27
                 </a>
               </div>
               <div className="contact-info-item">
-                <span className="contact-info-label">Adres</span>
+                <span className="contact-info-label">{lang === 'tr' ? 'Adres' : 'Address'}</span>
                 <span className="contact-info-value">
                   Seyhan Mah. 630/3 Sk. No:3/1<br />
-                  İzmir, Türkiye
+                  {lang === 'tr' ? 'İzmir, Türkiye' : 'Izmir, Turkey'}
                 </span>
               </div>
               <div className="contact-info-item">
-                <span className="contact-info-label">Sosyal</span>
+                <span className="contact-info-label">{lang === 'tr' ? 'Sosyal' : 'Social'}</span>
                 <a
                   href="https://instagram.com/bahtiyartunamobilya"
                   target="_blank"

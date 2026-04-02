@@ -51,7 +51,16 @@ export const en = {
     socialTitle: "Social",
     rights: "Bahtiyar Tuna Architecture & Furniture. All Rights Reserved.",
     privacy: "Privacy Policy",
-    terms: "Terms of Use"
+    terms: "Terms of Use",
+    hoursTitle: "WORKING HOURS",
+    mon: "Monday",
+    tue: "Tuesday",
+    wed: "Wednesday",
+    thu: "Thursday",
+    fri: "Friday",
+    sat: "Saturday",
+    sun: "Sunday",
+    closed: "Closed"
   },
   projectDetail: {
     notFound: "Project not found.",
