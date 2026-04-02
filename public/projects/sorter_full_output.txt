@@ -1,0 +1,387 @@
+const galleries = {
+
+  'sahin-balikcilik': {
+    images: [
+      p('sahin-balikcilik', 'kapak.png'),
+      p('sahin-balikcilik', 'yatay-1.png'),
+      p('sahin-balikcilik', 'yatay-2.png'),
+      p('sahin-balikcilik', 'yatay-3.png'),
+      p('sahin-balikcilik', 'yatay-4.png'),
+      p('sahin-balikcilik', 'yatay-5.png'),
+      p('sahin-balikcilik', 'dikey-a1.png'),
+      p('sahin-balikcilik', 'dikey-a2.png'),
+      p('sahin-balikcilik', 'yatay-7.png'),
+      p('sahin-balikcilik', 'yatay-8.png'),
+      p('sahin-balikcilik', 'yatay-9.png'),
+      p('sahin-balikcilik', 'yatay-10.png'),
+      p('sahin-balikcilik', 'yatay-11.png'),
+      p('sahin-balikcilik', 'dikey-b1.png'),
+      p('sahin-balikcilik', 'dikey-b2.png'),
+      p('sahin-balikcilik', 'yatay-13.png'),
+      p('sahin-balikcilik', 'yatay-14.png'),
+      p('sahin-balikcilik', 'dikey-c1.png'),
+      p('sahin-balikcilik', 'dikey-c2.png'),
+      p('sahin-balikcilik', 'dikey-c3.png'),
+      p('sahin-balikcilik', 'yatay-16.png'),
+      p('sahin-balikcilik', 'yatay-17.png'),
+      p('sahin-balikcilik', 'yatay-18.png'),
+      p('sahin-balikcilik', 'yatay-19.png'),
+      p('sahin-balikcilik', 'yatay-20.png'),
+      p('sahin-balikcilik', 'dikey-d1.png'),
+      p('sahin-balikcilik', 'dikey-d2.png'),
+      p('sahin-balikcilik', 'dikey-d3.png'),
+      p('sahin-balikcilik', 'dikey-e1.png'),
+      p('sahin-balikcilik', 'dikey-e2.png'),
+      p('sahin-balikcilik', 'dikey-e3.png'),
+      p('sahin-balikcilik', 'yatay-23.png'),
+      p('sahin-balikcilik', 'yatay-24.png'),
+      p('sahin-balikcilik', 'dikey-f1.png'),
+      p('sahin-balikcilik', 'dikey-f2.png'),
+    ],
+  },
+
+  'ds-yali-dairesi': {
+    images: [
+      p('d&s-yali-dairesi', 'yatay-1.jpg'),
+      p('d&s-yali-dairesi', 'yatay-2.jpg'),
+      p('d&s-yali-dairesi', 'yatay-3.jpg'),
+      p('d&s-yali-dairesi', 'dikey-a1.jpg'),
+      p('d&s-yali-dairesi', 'dikey-a2.jpg'),
+      p('d&s-yali-dairesi', 'dikey-a3.jpg'),
+      p('d&s-yali-dairesi', 'yatay-5.jpg'),
+      p('d&s-yali-dairesi', 'yatay-6.jpg'),
+      p('d&s-yali-dairesi', 'yatay-7.jpg'),
+      p('d&s-yali-dairesi', 'dikey-b1.jpg'),
+      p('d&s-yali-dairesi', 'dikey-b2.jpg'),
+      p('d&s-yali-dairesi', 'dikey-b3.jpg'),
+      p('d&s-yali-dairesi', 'yatay-9.jpg'),
+      p('d&s-yali-dairesi', 'yatay-10.jpg'),
+      p('d&s-yali-dairesi', 'yatay-11.jpg'),
+      p('d&s-yali-dairesi', 'yatay-12.jpg'),
+    ],
+  },
+
+  'sa-villa': {
+    images: [
+      p('s&a-villa', 'kapak.jpg'),
+      p('s&a-villa', 'yatay-1.jpg'),
+      p('s&a-villa', 'yatay-2.jpg'),
+      p('s&a-villa', 'yatay-3.jpg'),
+      p('s&a-villa', 'yatay-4.jpg'),
+      p('s&a-villa', 'dikey-a1.jpg'),
+      p('s&a-villa', 'dikey-a2.jpg'),
+      p('s&a-villa', 'dikey-a3.jpg'),
+      p('s&a-villa', 'yatay-6.jpg'),
+      p('s&a-villa', 'yatay-7.jpg'),
+      p('s&a-villa', 'yatay-8.jpg'),
+      p('s&a-villa', 'dikey-b1.jpg'),
+      p('s&a-villa', 'dikey-b2.jpg'),
+      p('s&a-villa', 'dikey-b3.jpg'),
+      p('s&a-villa', 'yatay-10.jpg'),
+      p('s&a-villa', 'yatay-11.jpg'),
+      p('s&a-villa', 'yatay-12.jpg'),
+      p('s&a-villa', 'yatay-13.jpg'),
+    ],
+  },
+
+  'zo-malikane': {
+    images: [
+      p('z&o-malikane', 'kapak.jpg'),
+      p('z&o-malikane', 'yatay-1.jpg'),
+      p('z&o-malikane', 'yatay-2.jpg'),
+      p('z&o-malikane', 'yatay-3.jpg'),
+      p('z&o-malikane', 'yatay-4.jpg'),
+      p('z&o-malikane', 'yatay-5.jpg'),
+      p('z&o-malikane', 'dikey-a1.jpg'),
+      p('z&o-malikane', 'dikey-a2.jpg'),
+      p('z&o-malikane', 'yatay-7.jpg'),
+      p('z&o-malikane', 'yatay-8.jpg'),
+      p('z&o-malikane', 'yatay-9.jpg'),
+      p('z&o-malikane', 'yatay-10.jpg'),
+      p('z&o-malikane', 'yatay-11.jpg'),
+      p('z&o-malikane', 'yatay-12.jpg'),
+      p('z&o-malikane', 'yatay-13.jpg'),
+      p('z&o-malikane', 'dikey-b1.jpg'),
+      p('z&o-malikane', 'dikey-b2.jpg'),
+      p('z&o-malikane', 'dikey-b3.jpg'),
+    ],
+  },
+
+  'bf-villa': {
+    images: [
+      p('b&f-villa', 'yatay-1.jpg'),
+      p('b&f-villa', 'yatay-2.jpg'),
+      p('b&f-villa', 'yatay-3.jpg'),
+      p('b&f-villa', 'yatay-4.jpg'),
+      p('b&f-villa', 'dikey-a1.jpg'),
+      p('b&f-villa', 'dikey-a2.jpg'),
+      p('b&f-villa', 'dikey-a3.jpg'),
+      p('b&f-villa', 'yatay-6.jpg'),
+      p('b&f-villa', 'yatay-7.jpg'),
+      p('b&f-villa', 'dikey-b1.jpg'),
+      p('b&f-villa', 'dikey-b2.jpg'),
+      p('b&f-villa', 'dikey-b3.jpg'),
+    ],
+  },
+
+  'fm-yali-dairesi': {
+    images: [
+      p('f&m-yali-dairesi', 'yatay-1.jpg'),
+      p('f&m-yali-dairesi', 'yatay-2.jpg'),
+      p('f&m-yali-dairesi', 'yatay-3.jpg'),
+      p('f&m-yali-dairesi', 'yatay-4.jpg'),
+      p('f&m-yali-dairesi', 'yatay-5.jpg'),
+      p('f&m-yali-dairesi', 'dikey-a1.jpg'),
+      p('f&m-yali-dairesi', 'dikey-a2.jpg'),
+      p('f&m-yali-dairesi', 'yatay-7.jpg'),
+      p('f&m-yali-dairesi', 'yatay-8.jpg'),
+      p('f&m-yali-dairesi', 'yatay-9.jpg'),
+      p('f&m-yali-dairesi', 'yatay-10.jpg'),
+      p('f&m-yali-dairesi', 'dikey-b1.jpg'),
+      p('f&m-yali-dairesi', 'dikey-b2.jpg'),
+      p('f&m-yali-dairesi', 'dikey-b3.jpg'),
+      p('f&m-yali-dairesi', 'yatay-12.jpg'),
+      p('f&m-yali-dairesi', 'yatay-13.jpg'),
+      p('f&m-yali-dairesi', 'yatay-14.jpg'),
+      p('f&m-yali-dairesi', 'dikey-c1.jpg'),
+      p('f&m-yali-dairesi', 'dikey-c2.jpg'),
+      p('f&m-yali-dairesi', 'dikey-c3.jpg'),
+      p('f&m-yali-dairesi', 'yatay-16.jpg'),
+      p('f&m-yali-dairesi', 'yatay-17.jpg'),
+      p('f&m-yali-dairesi', 'yatay-18.jpg'),
+      p('f&m-yali-dairesi', 'yatay-19.jpg'),
+    ],
+  },
+
+  'eb-villa': {
+    images: [
+      p('e&b-villa', 'yatay-1.jpg'),
+      p('e&b-villa', 'yatay-2.jpg'),
+      p('e&b-villa', 'yatay-3.jpg'),
+      p('e&b-villa', 'yatay-4.jpg'),
+      p('e&b-villa', 'yatay-5.jpg'),
+      p('e&b-villa', 'yatay-6.jpg'),
+      p('e&b-villa', 'yatay-7.jpg'),
+      p('e&b-villa', 'yatay-8.jpg'),
+    ],
+  },
+
+  'spor-kulubu': {
+    images: [
+      p('spor-kulubu-ofis', 'kapak.jpg'),
+      p('spor-kulubu-ofis', 'yatay-1.jpg'),
+      p('spor-kulubu-ofis', 'yatay-2.jpg'),
+      p('spor-kulubu-ofis', 'dikey-a1.jpg'),
+      p('spor-kulubu-ofis', 'dikey-a2.jpg'),
+      p('spor-kulubu-ofis', 'dikey-a3.jpg'),
+      p('spor-kulubu-ofis', 'yatay-4.jpg'),
+      p('spor-kulubu-ofis', 'yatay-5.jpg'),
+      p('spor-kulubu-ofis', 'yatay-6.jpg'),
+      p('spor-kulubu-ofis', 'yatay-7.jpg'),
+      p('spor-kulubu-ofis', 'yatay-8.jpg'),
+    ],
+  },
+
+  'mi-villa': {
+    images: [
+      p('m&i-villa', 'kapak.jpg'),
+      p('m&i-villa', 'yatay-1.jpg'),
+      p('m&i-villa', 'yatay-2.jpg'),
+      p('m&i-villa', 'yatay-3.jpg'),
+      p('m&i-villa', 'yatay-4.jpg'),
+      p('m&i-villa', 'dikey-a1.jpg'),
+      p('m&i-villa', 'dikey-a2.jpg'),
+      p('m&i-villa', 'yatay-6.jpg'),
+    ],
+  },
+
+  'sb-villa': {
+    images: [
+      p('s&b-villa', 'kapak.jpg'),
+      p('s&b-villa', 'yatay-1.jpg'),
+      p('s&b-villa', 'dikey-a1.jpg'),
+      p('s&b-villa', 'yatay-3.jpg'),
+      p('s&b-villa', 'yatay-4.jpg'),
+    ],
+  },
+
+  'ev-villa': {
+    images: [
+      p('e&v-villa', 'kapak.jpg'),
+      p('e&v-villa', 'yatay-1.jpg'),
+      p('e&v-villa', 'yatay-2.jpg'),
+      p('e&v-villa', 'yatay-3.jpg'),
+      p('e&v-villa', 'yatay-4.jpg'),
+      p('e&v-villa', 'yatay-5.jpg'),
+    ],
+  },
+
+  'kk-villa': {
+    images: [
+      p('k&k-villa', 'kapak.jpg'),
+      p('k&k-villa', 'yatay-1.jpg'),
+      p('k&k-villa', 'yatay-2.jpg'),
+      p('k&k-villa', 'yatay-3.jpg'),
+      p('k&k-villa', 'yatay-4.jpg'),
+      p('k&k-villa', 'dikey-a1.jpg'),
+    ],
+  },
+
+  'sigacik-otel': {
+    images: [
+      p('sigacik-otel', 'kapak.jpg'),
+      p('sigacik-otel', 'yatay-1.jpg'),
+      p('sigacik-otel', 'yatay-2.jpg'),
+      p('sigacik-otel', 'yatay-3.jpg'),
+      p('sigacik-otel', 'yatay-4.jpg'),
+      p('sigacik-otel', 'yatay-5.jpg'),
+    ],
+  },
+
+  'bomonti-ofis': {
+    images: [
+      p('bomonti-ofis', 'kapak.jpg'),
+      p('bomonti-ofis', 'yatay-1.jpg'),
+      p('bomonti-ofis', 'yatay-2.jpg'),
+      p('bomonti-ofis', 'yatay-3.jpg'),
+      p('bomonti-ofis', 'yatay-4.jpg'),
+      p('bomonti-ofis', 'dikey-a1.jpg'),
+      p('bomonti-ofis', 'dikey-a2.jpg'),
+      p('bomonti-ofis', 'dikey-a3.jpg'),
+      p('bomonti-ofis', 'yatay-6.jpg'),
+      p('bomonti-ofis', 'yatay-7.jpg'),
+      p('bomonti-ofis', 'yatay-8.jpg'),
+      p('bomonti-ofis', 'yatay-9.jpg'),
+      p('bomonti-ofis', 'dikey-b1.jpg'),
+    ],
+  },
+
+  'sm-villa': {
+    images: [
+      p('s&m-villa', 'kapak.jpg'),
+      p('s&m-villa', 'yatay-1.jpg'),
+      p('s&m-villa', 'yatay-2.jpg'),
+      p('s&m-villa', 'yatay-3.jpg'),
+      p('s&m-villa', 'yatay-4.jpg'),
+      p('s&m-villa', 'yatay-5.jpg'),
+      p('s&m-villa', 'dikey-a1.jpg'),
+      p('s&m-villa', 'dikey-a2.jpg'),
+      p('s&m-villa', 'yatay-7.jpg'),
+      p('s&m-villa', 'yatay-8.jpg'),
+      p('s&m-villa', 'yatay-9.jpg'),
+      p('s&m-villa', 'yatay-10.jpg'),
+      p('s&m-villa', 'dikey-b1.jpg'),
+      p('s&m-villa', 'dikey-b2.jpg'),
+      p('s&m-villa', 'yatay-12.jpg'),
+      p('s&m-villa', 'yatay-13.jpg'),
+      p('s&m-villa', 'yatay-14.jpg'),
+      p('s&m-villa', 'yatay-15.jpg'),
+      p('s&m-villa', 'yatay-16.jpg'),
+      p('s&m-villa', 'yatay-17.jpg'),
+      p('s&m-villa', 'yatay-18.jpg'),
+    ],
+  },
+
+  'ad-daire': {
+    images: [
+      p('a.d-daire', 'kapak.jpg'),
+      p('a.d-daire', 'dikey-a1.jpg'),
+      p('a.d-daire', 'yatay-2.jpg'),
+      p('a.d-daire', 'dikey-b1.jpg'),
+      p('a.d-daire', 'dikey-b2.jpg'),
+      p('a.d-daire', 'yatay-4.jpg'),
+      p('a.d-daire', 'dikey-c1.jpg'),
+      p('a.d-daire', 'dikey-c2.jpg'),
+      p('a.d-daire', 'yatay-6.jpg'),
+      p('a.d-daire', 'dikey-d1.jpg'),
+      p('a.d-daire', 'dikey-d2.jpg'),
+      p('a.d-daire', 'dikey-e1.jpg'),
+      p('a.d-daire', 'dikey-e2.jpg'),
+      p('a.d-daire', 'dikey-f1.jpg'),
+      p('a.d-daire', 'dikey-g1.jpg'),
+      p('a.d-daire', 'dikey-g2.jpg'),
+    ],
+  },
+
+  'na-daire': {
+    images: [
+      p('n&a-daire', 'kapak.jpg'),
+      p('n&a-daire', 'yatay-1.jpg'),
+      p('n&a-daire', 'yatay-2.jpg'),
+      p('n&a-daire', 'yatay-3.jpg'),
+      p('n&a-daire', 'yatay-4.jpg'),
+      p('n&a-daire', 'yatay-5.jpg'),
+      p('n&a-daire', 'yatay-6.jpg'),
+    ],
+  },
+
+  'beykoz-villa': {
+    images: [
+      p('beykoz-villa', 'kapak.jpg'),
+      p('beykoz-villa', 'yatay-1.jpg'),
+      p('beykoz-villa', 'dikey-a1.jpg'),
+      p('beykoz-villa', 'yatay-3.jpg'),
+      p('beykoz-villa', 'dikey-b1.jpg'),
+      p('beykoz-villa', 'yatay-5.jpg'),
+      p('beykoz-villa', 'dikey-c1.jpg'),
+      p('beykoz-villa', 'dikey-c2.jpg'),
+      p('beykoz-villa', 'dikey-d1.jpg'),
+      p('beykoz-villa', 'dikey-d2.jpg'),
+      p('beykoz-villa', 'yatay-8.jpg'),
+      p('beykoz-villa', 'yatay-9.jpg'),
+      p('beykoz-villa', 'yatay-10.jpg'),
+      p('beykoz-villa', 'yatay-11.jpg'),
+      p('beykoz-villa', 'dikey-e1.jpg'),
+      p('beykoz-villa', 'dikey-e2.jpg'),
+      p('beykoz-villa', 'yatay-13.jpg'),
+    ],
+  },
+
+  'ce-daire': {
+    images: [
+      p('c&e-daire', 'kapak.jpg'),
+      p('c&e-daire', 'yatay-1.jpg'),
+      p('c&e-daire', 'yatay-2.jpg'),
+      p('c&e-daire', 'yatay-3.jpg'),
+      p('c&e-daire', 'dikey-a1.jpg'),
+      p('c&e-daire', 'dikey-b1.jpg'),
+      p('c&e-daire', 'dikey-b2.jpg'),
+      p('c&e-daire', 'dikey-b3.jpg'),
+      p('c&e-daire', 'yatay-6.jpg'),
+      p('c&e-daire', 'yatay-7.jpg'),
+      p('c&e-daire', 'yatay-8.jpg'),
+      p('c&e-daire', 'yatay-9.jpg'),
+      p('c&e-daire', 'yatay-10.jpg'),
+      p('c&e-daire', 'dikey-c1.jpg'),
+      p('c&e-daire', 'dikey-c2.jpg'),
+      p('c&e-daire', 'dikey-c3.jpg'),
+      p('c&e-daire', 'yatay-12.jpg'),
+      p('c&e-daire', 'yatay-13.jpg'),
+      p('c&e-daire', 'yatay-14.jpg'),
+      p('c&e-daire', 'dikey-d1.jpg'),
+      p('c&e-daire', 'dikey-d2.jpg'),
+      p('c&e-daire', 'dikey-d3.jpg'),
+    ],
+  },
+};
+
+// THUMBNAILS:
+// sahin-balikcilik: p('sahin-balikcilik', 'grid.png')
+// ds-yali-dairesi: p('d&s-yali-dairesi', 'grid.jpg')
+// sa-villa: p('s&a-villa', 'grid.jpg')
+// zo-malikane: p('z&o-malikane', 'grid.jpg')
+// bf-villa: p('b&f-villa', 'grid.jpg')
+// fm-yali-dairesi: p('f&m-yali-dairesi', 'grid.jpg')
+// eb-villa: p('e&b-villa', 'grid.jpg')
+// spor-kulubu: p('spor-kulubu-ofis', 'grid.jpg')
+// mi-villa: p('m&i-villa', 'grid.jpg')
+// sb-villa: p('s&b-villa', 'grid.jpg')
+// ev-villa: p('e&v-villa', 'grid.jpg')
+// kk-villa: p('k&k-villa', 'grid.jpg')
+// sigacik-otel: p('sigacik-otel', 'grid.jpg')
+// bomonti-ofis: p('bomonti-ofis', 'grid.jpg')
+// sm-villa: p('s&m-villa', 'grid.jpg')
+// ad-daire: p('a.d-daire', 'grid.jpg')
+// na-daire: p('n&a-daire', 'grid.jpg')
+// beykoz-villa: p('beykoz-villa', 'grid.jpg')
+// ce-daire: galleries['ce-daire'].images[0]

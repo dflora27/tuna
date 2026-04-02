@@ -1,0 +1,107 @@
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 180px;
+  /* extra bottom space before footer */
+}
+
+.about-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+
+.about-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 12, 11, 0.65); /* Darker overlay to make text readable */
+  z-index: -1;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-text-wrapper {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-center-logo {
+  height: auto;
+  width: 120px;
+  margin-bottom: 3rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-subtitle {
+  display: none; /* Hide subtitle to match screenshot */
+}
+
+.about-highlight {
+  font-family: var(--font-sans);
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem); /* Same as paragraph */
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: rgba(253, 235, 225, 0.85); /* Same as paragraph */
+  text-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+.about-paragraph {
+  font-family: var(--font-sans);
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  line-height: 1.8;
+  color: rgba(253, 235, 225, 0.85);
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+.about-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.about-process {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--brand-cream);
+  opacity: 0.9;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.about-process .separator {
+  width: 30px;
+  height: 1px;
+  background-color: var(--brand-burgundy);
+}

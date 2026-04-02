@@ -1,0 +1,50 @@
+.floating-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: transparent;
+  color: var(--text-light);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.floating-button.lifted {
+  bottom: 8rem; /* Lifts up above the footer or next project controls */
+}
+
+.theme-light .floating-button {
+  color: var(--text-dark);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.floating-button:hover {
+  background-color: var(--text-light);
+  color: var(--bg-dark);
+  border-color: var(--text-light);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.theme-light .floating-button:hover {
+  background-color: var(--text-dark);
+  color: var(--bg-light);
+  border-color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .floating-button {
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.65rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

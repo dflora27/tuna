@@ -1,0 +1,123 @@
+
+  'd&s-yali-dairesi': {
+    images: [
+      p('d&s-yali-dairesi', 'yatay-1.jpg'),
+      p('d&s-yali-dairesi', 'yatay-2.jpg'),
+      p('d&s-yali-dairesi', 'yatay-3.jpg'),
+      p('d&s-yali-dairesi', 'dikey-a1.jpg'),
+      p('d&s-yali-dairesi', 'dikey-a2.jpg'),
+      p('d&s-yali-dairesi', 'dikey-a3.jpg'),
+      p('d&s-yali-dairesi', 'yatay-5.jpg'),
+      p('d&s-yali-dairesi', 'yatay-6.jpg'),
+      p('d&s-yali-dairesi', 'yatay-7.jpg'),
+      p('d&s-yali-dairesi', 'dikey-b1.jpg'),
+      p('d&s-yali-dairesi', 'dikey-b2.jpg'),
+      p('d&s-yali-dairesi', 'dikey-b3.jpg'),
+      p('d&s-yali-dairesi', 'yatay-9.jpg'),
+      p('d&s-yali-dairesi', 'yatay-10.jpg'),
+      p('d&s-yali-dairesi', 'yatay-11.jpg'),
+      p('d&s-yali-dairesi', 'yatay-12.jpg'),
+    ],
+  },
+  // THUMBNAIL INFO FOR d&s-yali-dairesi: p('d&s-yali-dairesi', 'grid.jpg')
+
+
+  's&a-villa': {
+    images: [
+      p('s&a-villa', 'kapak.jpg'),
+      p('s&a-villa', 'yatay-1.jpg'),
+      p('s&a-villa', 'yatay-2.jpg'),
+      p('s&a-villa', 'yatay-3.jpg'),
+      p('s&a-villa', 'yatay-4.jpg'),
+      p('s&a-villa', 'dikey-a1.jpg'),
+      p('s&a-villa', 'dikey-a2.jpg'),
+      p('s&a-villa', 'dikey-a3.jpg'),
+      p('s&a-villa', 'yatay-6.jpg'),
+      p('s&a-villa', 'yatay-7.jpg'),
+      p('s&a-villa', 'yatay-8.jpg'),
+      p('s&a-villa', 'dikey-b1.jpg'),
+      p('s&a-villa', 'dikey-b2.jpg'),
+      p('s&a-villa', 'dikey-b3.jpg'),
+      p('s&a-villa', 'yatay-10.jpg'),
+      p('s&a-villa', 'yatay-11.jpg'),
+      p('s&a-villa', 'yatay-12.jpg'),
+      p('s&a-villa', 'yatay-13.jpg'),
+    ],
+  },
+  // THUMBNAIL INFO FOR s&a-villa: p('s&a-villa', 'grid.jpg')
+
+
+  'z&o-malikane': {
+    images: [
+      p('z&o-malikane', 'kapak.jpg'),
+      p('z&o-malikane', 'yatay-1.jpg'),
+      p('z&o-malikane', 'yatay-2.jpg'),
+      p('z&o-malikane', 'yatay-3.jpg'),
+      p('z&o-malikane', 'yatay-4.jpg'),
+      p('z&o-malikane', 'yatay-5.jpg'),
+      p('z&o-malikane', 'dikey-a1.jpg'),
+      p('z&o-malikane', 'dikey-a2.jpg'),
+      p('z&o-malikane', 'yatay-7.jpg'),
+      p('z&o-malikane', 'yatay-8.jpg'),
+      p('z&o-malikane', 'yatay-9.jpg'),
+      p('z&o-malikane', 'yatay-10.jpg'),
+      p('z&o-malikane', 'yatay-11.jpg'),
+      p('z&o-malikane', 'yatay-12.jpg'),
+      p('z&o-malikane', 'yatay-13.jpg'),
+      p('z&o-malikane', 'dikey-b1.jpg'),
+      p('z&o-malikane', 'dikey-b2.jpg'),
+      p('z&o-malikane', 'dikey-b3.jpg'),
+    ],
+  },
+  // THUMBNAIL INFO FOR z&o-malikane: p('z&o-malikane', 'grid.jpg')
+
+
+  'b&f-villa': {
+    images: [
+      p('b&f-villa', 'yatay-1.jpg'),
+      p('b&f-villa', 'yatay-2.jpg'),
+      p('b&f-villa', 'yatay-3.jpg'),
+      p('b&f-villa', 'yatay-4.jpg'),
+      p('b&f-villa', 'dikey-a1.jpg'),
+      p('b&f-villa', 'dikey-a2.jpg'),
+      p('b&f-villa', 'dikey-a3.jpg'),
+      p('b&f-villa', 'yatay-6.jpg'),
+      p('b&f-villa', 'yatay-7.jpg'),
+      p('b&f-villa', 'dikey-b1.jpg'),
+      p('b&f-villa', 'dikey-b2.jpg'),
+      p('b&f-villa', 'dikey-b3.jpg'),
+    ],
+  },
+  // THUMBNAIL INFO FOR b&f-villa: p('b&f-villa', 'grid.jpg')
+
+
+  'f&m-yali-dairesi': {
+    images: [
+      p('f&m-yali-dairesi', 'yatay-1.jpg'),
+      p('f&m-yali-dairesi', 'yatay-2.jpg'),
+      p('f&m-yali-dairesi', 'yatay-3.jpg'),
+      p('f&m-yali-dairesi', 'yatay-4.jpg'),
+      p('f&m-yali-dairesi', 'yatay-5.jpg'),
+      p('f&m-yali-dairesi', 'dikey-a1.jpg'),
+      p('f&m-yali-dairesi', 'dikey-a2.jpg'),
+      p('f&m-yali-dairesi', 'yatay-7.jpg'),
+      p('f&m-yali-dairesi', 'yatay-8.jpg'),
+      p('f&m-yali-dairesi', 'yatay-9.jpg'),
+      p('f&m-yali-dairesi', 'yatay-10.jpg'),
+      p('f&m-yali-dairesi', 'dikey-b1.jpg'),
+      p('f&m-yali-dairesi', 'dikey-b2.jpg'),
+      p('f&m-yali-dairesi', 'dikey-b3.jpg'),
+      p('f&m-yali-dairesi', 'yatay-12.jpg'),
+      p('f&m-yali-dairesi', 'yatay-13.jpg'),
+      p('f&m-yali-dairesi', 'yatay-14.jpg'),
+      p('f&m-yali-dairesi', 'dikey-c1.jpg'),
+      p('f&m-yali-dairesi', 'dikey-c2.jpg'),
+      p('f&m-yali-dairesi', 'dikey-c3.jpg'),
+      p('f&m-yali-dairesi', 'yatay-16.jpg'),
+      p('f&m-yali-dairesi', 'yatay-17.jpg'),
+      p('f&m-yali-dairesi', 'yatay-18.jpg'),
+      p('f&m-yali-dairesi', 'yatay-19.jpg'),
+    ],
+  },
+  // THUMBNAIL INFO FOR f&m-yali-dairesi: p('f&m-yali-dairesi', 'grid.jpg')
+

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+  /* Brand Identity Colors */
+  --brand-burgundy: #691A2F;
+  --brand-dark: #2B2422;
+  --brand-taupe: #AC9C8D;
+  --brand-gray: #D9D9D9;
+  --brand-cream: #FDEBE1;
+
+  /* Theme Defaults */
+  --bg-dark: var(--brand-dark);
+  --bg-dark-secondary: #1a1615;
+  --text-light: var(--brand-cream);
+  --text-muted: var(--brand-taupe);
+  
+  --bg-light: var(--brand-cream);
+  --bg-light-secondary: var(--brand-gray);
+  --text-dark: var(--brand-dark);
+  
+  --brand-accent: var(--brand-burgundy);
+
+  /* Fonts (Approximating Bon Voyage & Nexa with elegant Google alternatives) */
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  
+  --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Base Classes */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.main-content {
+  flex: 1 0 auto; /* Grow to fill, never shrink */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.page-container {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* Light Theme overrides */
+.theme-light {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
