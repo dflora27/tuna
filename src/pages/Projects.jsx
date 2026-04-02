@@ -6,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { projectsData } from '../data/projectsData';
 import './Projects.css';
 
-const ProjectItem = ({ project, index }) => {
+const ProjectItem = ({ project, index, t }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -34,7 +34,7 @@ const ProjectItem = ({ project, index }) => {
               <span className="project-category">{project.category}</span>
               <h3 className="project-title">{project.title}</h3>
               <p className="project-description">{project.description}</p>
-              <span className="project-cta">→ Detayları Gör</span>
+              <span className="project-cta">→ {t('projects.viewProject')}</span>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ const Projects = () => {
       <div className="projects-grid-wrapper">
         <div className="projects-grid">
           {projectsData.map((project, index) => (
-            <ProjectItem key={project.id} project={project} index={index} />
+            <ProjectItem key={project.id} project={project} index={index} t={t} />
           ))}
         </div>
       </div>

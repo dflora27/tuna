@@ -2,9 +2,11 @@ import { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { projectsData } from '../data/projectsData';
+import { useLanguage } from '../context/LanguageContext';
 import './ProjectDetail.css';
 
 const ProjectDetail = () => {
+  const { t } = useLanguage();
   const { id } = useParams();
   const navigate = useNavigate();
   const currentIndex = projectsData.findIndex(p => p.id === id);
@@ -15,8 +17,8 @@ const ProjectDetail = () => {
   if (!project) {
     return (
       <div className="pd-not-found">
-        <p>Proje bulunamadı.</p>
-        <button onClick={() => navigate('/projects')}>Geri Dön</button>
+        <p>{t('projectDetail.notFound')}</p>
+        <button onClick={() => navigate('/projects')}>{t('projectDetail.goBack')}</button>
       </div>
     );
   }
@@ -81,9 +83,9 @@ const ProjectDetail = () => {
         >
           <h1 className="pd-hero-title">{project.title.toUpperCase()}</h1>
           <div className="pd-hero-meta">
-            <span>lokasyon: {project.location}</span>
-            <span>yıl: {project.year}</span>
-            <span>tip: {project.type}</span>
+            <span>{t('projectDetail.location')}: {project.location}</span>
+            <span>{t('projectDetail.year')}: {project.year}</span>
+            <span>{t('projectDetail.type')}: {project.type}</span>
           </div>
         </motion.div>
 
@@ -116,7 +118,7 @@ const ProjectDetail = () => {
       {/* ── RETURN TO PROJECTS BUTTON ── */}
       <div className="pd-return-wrapper">
         <button className="pd-return-btn" onClick={() => navigate('/projects')}>
-          DİĞER PROJELER
+          {t('projectDetail.otherProjects')}
         </button>
       </div>
 
@@ -129,7 +131,7 @@ const ProjectDetail = () => {
           >
             <span className="pd-nav-arrow">←</span>
             <span className="pd-nav-label">
-              <span className="pd-nav-hint">Önceki Proje</span>
+              <span className="pd-nav-hint">{t('projectDetail.prevProject')}</span>
               <span className="pd-nav-name">{prevProject.title}</span>
             </span>
           </button>
@@ -141,7 +143,7 @@ const ProjectDetail = () => {
             onClick={() => navigate(`/projects/${nextProject.id}`)}
           >
             <span className="pd-nav-label">
-              <span className="pd-nav-hint">Sonraki Proje</span>
+              <span className="pd-nav-hint">{t('projectDetail.nextProject')}</span>
               <span className="pd-nav-name">{nextProject.title}</span>
             </span>
             <span className="pd-nav-arrow">→</span>

@@ -52,5 +52,18 @@ export const en = {
     rights: "Bahtiyar Tuna Architecture & Furniture. All Rights Reserved.",
     privacy: "Privacy Policy",
     terms: "Terms of Use"
+  },
+  projectDetail: {
+    notFound: "Project not found.",
+    goBack: "Go Back",
+    location: "location",
+    year: "year",
+    type: "type",
+    otherProjects: "OTHER PROJECTS",
+    prevProject: "Previous Project",
+    nextProject: "Next Project"
+  },
+  floatingButton: {
+    text: "PROJECT REQUEST"
   }
 };

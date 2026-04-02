@@ -52,5 +52,18 @@ export const tr = {
     rights: "Bahtiyar Tuna Mimarlık & Mobilya. Tüm Hakları Saklıdır.",
     privacy: "Gizlilik Politikası",
     terms: "Kullanım Şartları"
+  },
+  projectDetail: {
+    notFound: "Proje bulunamadı.",
+    goBack: "Geri Dön",
+    location: "lokasyon",
+    year: "yıl",
+    type: "tip",
+    otherProjects: "DİĞER PROJELER",
+    prevProject: "Önceki Proje",
+    nextProject: "Sonraki Proje"
+  },
+  floatingButton: {
+    text: "PROJE TALEBİ"
   }
 };

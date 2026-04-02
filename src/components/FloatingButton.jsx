@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import './FloatingButton.css';
 
 const FloatingButton = () => {
+  const { t } = useLanguage();
   const [isLifted, setIsLifted] = useState(false);
 
   useEffect(() => {
@@ -29,7 +31,7 @@ const FloatingButton = () => {
 
   return (
     <Link to="/contact" className={`floating-button ${isLifted ? 'lifted' : ''}`}>
-      PROJE TALEBİ
+      {t('floatingButton.text')}
     </Link>
   );
 };
