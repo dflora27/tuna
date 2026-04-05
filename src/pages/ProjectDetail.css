@@ -270,17 +270,6 @@
 @media (max-width: 768px) {
   .pd-hero-title { font-size: clamp(2.5rem, 12vw, 5rem); }
   
-  .pd-gallery-row {
-    flex-direction: column;
-    aspect-ratio: auto;
-    gap: 4vw;
-  }
-  
-  .pd-gallery-img-wrap {
-    width: 100%;
-    aspect-ratio: 4 / 5; /* default mobile image ratio so they aren't unconstrained */
-  }
-
   .pd-nav {
     flex-direction: column;
   }
