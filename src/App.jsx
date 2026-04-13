@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { useLayoutEffect, useEffect, useState } from 'react';
 import Lenis from 'lenis';
@@ -16,6 +16,8 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -38,6 +40,8 @@ const AnimatedRoutes = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
     </AnimatePresence>
   );
@@ -98,18 +102,16 @@ function App() {
         {loading && <Preloader key="preloader" onComplete={() => setLoading(false)} />}
       </AnimatePresence>
 
-      {!loading && (
-        <div className="app-container">
-          <ConditionalNavbar />
-          
-          <main className="main-content">
-            <AnimatedRoutes />
-          </main>
-          
-          <ConditionalFooter />
-          <FloatingButton />
-        </div>
-      )}
+      <div className="app-container">
+        <ConditionalNavbar />
+        
+        <main className="main-content">
+          <AnimatedRoutes />
+        </main>
+        
+        <ConditionalFooter />
+        <FloatingButton />
+      </div>
     </Router>
   );
 }

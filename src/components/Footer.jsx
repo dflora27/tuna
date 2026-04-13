@@ -63,9 +63,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} {t('footer.rights')}</p>
           <div className="footer-legal-links">
-            <a href="#">{t('footer.privacy')}</a>
+            <Link to="/privacy">{t('footer.privacy')}</Link>
             <span>·</span>
-            <a href="#">{t('footer.terms')}</a>
+            <Link to="/terms">{t('footer.terms')}</Link>
           </div>
         </div>
 
@@ -75,3 +75,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -1,0 +1,29 @@
+.legal-page {
+  min-height: 100vh;
+  padding: 120px 5vw 80px 5vw;
+  background-color: #0a0808;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.legal-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.legal-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.legal-content p {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+}
