@@ -1,7 +1,7 @@
-// Tüm proje fotoğrafları public/projects/ altında tutulmaktadır.
+// Tüm proje fotoğrafları public/media/ altında tutulmaktadır.
 // Vite glob yerine static URL listesi kullanıyoruz (özel karakter & ve boşluk sorunlarından kaçınmak için).
 
-const BASE = '/projects';
+const BASE = '/media';
 
 const p = (folder, file) => `${BASE}/${folder}/${encodeURIComponent(file)}`;
 
