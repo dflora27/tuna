@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # index.html loop onlem
+  RewriteRule ^index\.html$ - [L]
+  
+  # Gelen istek gecerli bir dosya (resim, css, js) DEGILSE React yonlendirmesi yap
+  RewriteCond %{REQUEST_FILENAME} !-f
+  
+  # DIKKAT: !-d sartini bilerek kaldirdik! 
+  # Eger '-d' olsaydi, sunucu gercekte var olan "projects" klasorunu gorup 403 atardi.
+  # Biz "projects" kelimesini React URL'si olarak yonetmek istiyoruz.
+  RewriteRule . /index.html [L]
+</IfModule>
