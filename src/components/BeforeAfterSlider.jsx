@@ -8,7 +8,7 @@ const BeforeAfterSlider = ({
   beforeLabel = 'ÖNCESİ',
   afterLabel = 'SONRASI',
   title,
-  subtitle,
+  place,
   caption,
 }) => {
   const containerRef = useRef(null);
@@ -56,13 +56,6 @@ const BeforeAfterSlider = ({
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
     >
-      {(title || subtitle) && (
-        <header className="ba-card-head">
-          {subtitle && <span className="ba-card-eyebrow">{subtitle}</span>}
-          {title && <h3 className="ba-card-title">{title}</h3>}
-        </header>
-      )}
-
       <div
         ref={containerRef}
         className={`ba-stage ${dragging ? 'is-dragging' : ''}`}
@@ -99,13 +92,19 @@ const BeforeAfterSlider = ({
           aria-hidden="true"
         >
           <div className="ba-handle">
-            <span className="ba-handle-arrow ba-handle-arrow--left">‹</span>
-            <span className="ba-handle-arrow ba-handle-arrow--right">›</span>
+            <span className="ba-handle-arrow">‹</span>
+            <span className="ba-handle-arrow">›</span>
           </div>
         </div>
       </div>
 
-      {caption && <figcaption className="ba-caption">{caption}</figcaption>}
+      {(title || place || caption) && (
+        <figcaption className="ba-meta">
+          {title && <span className="ba-meta-title">{title}</span>}
+          {place && <span className="ba-meta-place">{place}</span>}
+          {caption && <p className="ba-meta-caption">{caption}</p>}
+        </figcaption>
+      )}
     </motion.figure>
   );
 };
