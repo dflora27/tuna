@@ -29,6 +29,7 @@ const Footer = () => {
                 <li><Link to="/">{t('nav.home')}</Link></li>
                 <li><Link to="/about">{t('nav.about')}</Link></li>
                 <li><Link to="/projects">{t('nav.projects')}</Link></li>
+                <li><Link to="/applications">{t('nav.applications')}</Link></li>
                 <li><Link to="/contact">{t('nav.contact')}</Link></li>
               </ul>
             </div>

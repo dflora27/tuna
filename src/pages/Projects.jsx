@@ -1,21 +1,14 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { projectsData } from '../data/projectsData';
 import './Projects.css';
 
 const ProjectItem = ({ project, index, t, lang }) => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"]
-  });
-
   return (
     <motion.div
-      ref={ref}
       className="project-card-wrapper"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -48,10 +41,6 @@ const Projects = () => {
 
   useEffect(() => {
     document.body.classList.remove('theme-light');
-    document.body.classList.add('theme-dark-projects');
-    return () => {
-      document.body.classList.remove('theme-dark-projects');
-    };
   }, []);
 
   return (

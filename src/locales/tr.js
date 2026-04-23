@@ -3,6 +3,7 @@ export const tr = {
     home: "Ana Sayfa",
     about: "Hakkımızda",
     projects: "Projeler",
+    applications: "Uygulama",
     contact: "İletişim",
   },
   home: {

@@ -2,22 +2,32 @@ import { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import './CustomCursor.css';
 
+const detectTouchDevice = () => {
+  if (typeof window === 'undefined') return true;
+  if (window.matchMedia && window.matchMedia('(hover: none)').matches) return true;
+  return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+};
+
 const CustomCursor = () => {
   const [hovered, setHovered] = useState(false);
   const [largeHovered, setLargeHovered] = useState(false);
-  const [cursorText, setCursorText] = useState("");
+  const [isTouch, setIsTouch] = useState(true);
+
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
-  
+
   const springConfig = { damping: 25, stiffness: 400, mass: 0.1 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
+  // Detect touch in an effect so SSR / hydration / StrictMode is happy.
   useEffect(() => {
-    const isMobile = "ontouchstart" in window || navigator.maxTouchPoints > 0;
-    if(isMobile) return; 
+    setIsTouch(detectTouchDevice());
+  }, []);
 
-    // Inject cursor:none into body immediately
+  useEffect(() => {
+    if (isTouch) return;
+
     document.body.classList.add('custom-cursor-active');
 
     const moveCursor = (e) => {
@@ -26,32 +36,24 @@ const CustomCursor = () => {
     };
 
     const handleMouseOver = (e) => {
-      const isProject = e.target.closest('.project-card');
-      const isGallery = e.target.closest('.pd-gallery-img-wrap');
-      
-      if (isProject) {
+      const t = e.target;
+      const isProject = t.closest && t.closest('.project-card');
+      const isGallery = t.closest && t.closest('.pd-gallery-img-wrap');
+
+      if (isProject || isGallery) {
         setLargeHovered(true);
-        setCursorText("");
         setHovered(false);
-      } else if (isGallery) {
-        setLargeHovered(true);
-        setCursorText("");
-        setHovered(false);
-      } else if (
-        e.target.tagName.toLowerCase() === 'a' || 
-        e.target.tagName.toLowerCase() === 'button' ||
-        e.target.closest('a') || 
-        e.target.closest('button') ||
-        e.target.closest('.interactive')
-      ) {
-        setHovered(true);
-        setLargeHovered(false);
-        setCursorText("");
-      } else {
-        setHovered(false);
-        setLargeHovered(false);
-        setCursorText("");
+        return;
       }
+
+      const tag = t.tagName ? t.tagName.toLowerCase() : '';
+      const isInteractive =
+        tag === 'a' ||
+        tag === 'button' ||
+        (t.closest && (t.closest('a') || t.closest('button') || t.closest('.interactive')));
+
+      setHovered(Boolean(isInteractive));
+      setLargeHovered(false);
     };
 
     window.addEventListener('mousemove', moveCursor);
@@ -62,10 +64,9 @@ const CustomCursor = () => {
       window.removeEventListener('mousemove', moveCursor);
       window.removeEventListener('mouseover', handleMouseOver);
     };
-  }, [cursorX, cursorY]);
+  }, [cursorX, cursorY, isTouch]);
 
-  // Don't render cursor div on mobile to save performance and avoid issues
-  if ("ontouchstart" in window || navigator.maxTouchPoints > 0) return null;
+  if (isTouch) return null;
 
   return (
     <>
@@ -77,9 +78,10 @@ const CustomCursor = () => {
         className={`custom-cursor-ring ${hovered ? 'hovered' : ''} ${largeHovered ? 'large-hovered' : ''}`}
         style={{ x: cursorXSpring, y: cursorYSpring }}
       >
-        <div className="cursor-text">{cursorText}</div>
+        <div className="cursor-text"></div>
       </motion.div>
     </>
   );
 };
+
 export default CustomCursor;

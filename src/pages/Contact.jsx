@@ -11,6 +11,10 @@ const Contact = () => {
     document.body.classList.remove('theme-light');
   }, []);
 
+  const mapTitle = lang === 'tr'
+    ? 'Bahtiyar Tuna atölyesinin Google Haritalar konumu'
+    : 'Bahtiyar Tuna workshop location on Google Maps';
+
   return (
     <PageTransition className="contact-page">
 
@@ -75,13 +79,14 @@ const Contact = () => {
           transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="contact-image-placeholder" style={{ padding: 0 }}>
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.8797407725883!2d27.136157677219874!3d38.37490337736205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbdf2f7ce592ab%3A0x428ea58422ff7221!2sTuna%20Mobilya!5e0!3m2!1str!2str!4v1775140474492!5m2!1str!2str" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0, display: 'block', filter: 'grayscale(100%) opacity(80%)' }} 
-              allowFullScreen="" 
-              loading="lazy" 
+            <iframe
+              title={mapTitle}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.8797407725883!2d27.136157677219874!3d38.37490337736205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbdf2f7ce592ab%3A0x428ea58422ff7221!2sTuna%20Mobilya!5e0!3m2!1str!2str!4v1775140474492!5m2!1str!2str"
+              width="100%"
+              height="100%"
+              style={{ border: 0, display: 'block', filter: 'grayscale(100%) opacity(80%)' }}
+              allowFullScreen
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>

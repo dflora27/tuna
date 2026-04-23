@@ -1,0 +1,1 @@
+import{a as e,r as t}from"./motion-D0GNmdGO.js";var n=e(),r=({children:e,className:r=``})=>(0,n.jsx)(t.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},exit:{opacity:0,y:-20},transition:{duration:.5,ease:[.22,1,.36,1]},className:`page-container ${r}`,children:e});export{r as t};

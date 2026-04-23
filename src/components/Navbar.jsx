@@ -56,6 +56,9 @@ const Navbar = () => {
           <NavLink to="/projects" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             {t('nav.projects')}
           </NavLink>
+          <NavLink to="/applications" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+            {t('nav.applications')}
+          </NavLink>
           <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             {t('nav.contact')}
           </NavLink>

@@ -13,3 +13,8 @@ yarn-error.log*
 pnpm-debug.log*
 .eslintcache
 .vite
+
+# Playwright MCP / visual test artifacts (should never be tracked)
+.playwright-mcp/
+/*-check.png
+/uygulama-*.png

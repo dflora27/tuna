@@ -94,7 +94,7 @@
 /* === NAV LINKS === */
 .navbar-links {
   display: flex;
-  gap: 3.5rem;
+  gap: clamp(1.6rem, 2.4vw, 3rem);
   align-items: center;
 }
 
