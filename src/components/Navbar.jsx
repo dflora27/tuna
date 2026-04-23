@@ -62,22 +62,44 @@ const Navbar = () => {
           <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             {t('nav.contact')}
           </NavLink>
+
+          {/* Mobile-only secondary actions inside the slide-in menu */}
+          <div className="navbar-menu-extra">
+            <div className="language-toggle">
+              <button
+                className={`lang-btn ${lang === 'tr' ? 'active' : ''}`}
+                onClick={() => toggleLanguage('tr')}
+              >TR</button>
+              <span className="lang-sep">/</span>
+              <button
+                className={`lang-btn ${lang === 'en' ? 'active' : ''}`}
+                onClick={() => toggleLanguage('en')}
+              >EN</button>
+            </div>
+            <a href="https://instagram.com/bahtiyartunamobilya" target="_blank" rel="noopener noreferrer" className="social-link" title="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
         </nav>
 
-        {/* Right Section: Language Toggle, Social & Hamburger */}
+        {/* Right Section: Desktop-only language + social + hamburger */}
         <div className="navbar-actions">
-          <div className="language-toggle">
-            <button 
+          <div className="language-toggle navbar-actions-desktop">
+            <button
               className={`lang-btn ${lang === 'tr' ? 'active' : ''}`}
               onClick={() => toggleLanguage('tr')}
             >TR</button>
             <span className="lang-sep">/</span>
-            <button 
+            <button
               className={`lang-btn ${lang === 'en' ? 'active' : ''}`}
               onClick={() => toggleLanguage('en')}
             >EN</button>
           </div>
-          <a href="https://instagram.com/bahtiyartunamobilya" target="_blank" rel="noopener noreferrer" className="social-link" title="Instagram">
+          <a href="https://instagram.com/bahtiyartunamobilya" target="_blank" rel="noopener noreferrer" className="social-link navbar-actions-desktop" title="Instagram">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
